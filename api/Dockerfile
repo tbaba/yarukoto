@@ -32,5 +32,3 @@ COPY . /app
 RUN bundle config path /bundle
 
 ENTRYPOINT ["prehook", "bundle install --path /bundle --jobs 4", "--"]
-
-CMD ["bin/rails", "server", "-p", "3000", "-b", "0.0.0.0"]
