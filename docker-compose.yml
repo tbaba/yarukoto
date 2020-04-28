@@ -18,7 +18,6 @@ services:
     build:
       context: ./api
       dockerfile: Dockerfile
-    image: rails:dev
     environment:
       DATABASE_HOST: db
     volumes:
